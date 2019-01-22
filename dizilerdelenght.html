@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>For in</title>
+</head>
+<body>
+    <script>
+
+
+    //Dizideki eleman sayisi;
+    var meyveler= ["Elma","Armut","Nar","Muz","Erik"];
+    document.write(meyveler + "<br/>");
+    var say=meyveler.length;
+    document.write("Dizideki eleman sayısı:" + say + "<br /> <br/>");
+    
+
+    //İçe içe(alt) dizideki eleman sayisi;
+    var sehirler= ["Manisa","İzmir",["Bornova","Çiğli","Alsancak"],"İstanbul","Kocaeli"];
+    document.write(sehirler + "<br/>");
+    var adet=sehirler.length;
+    document.write("Altdizideki eleman sayısı:" + adet + "<br/> <br/>");
+
+    //Dizi elemanının karakter sayisi;
+    var karakter=meyveler[0].length;
+    document.write(meyveler +"<br/>");
+    document.write("Karakter sayısı:" +karakter);
+    </script>
+</body>
+</html>
