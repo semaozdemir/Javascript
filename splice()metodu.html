@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>push() ve unshift() metodu</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+// splice()	:Diziye eleman\elemanlar ekler\siler.
+//Sadece sildiği eleman\elemanların değerini döndürür.
+
+/*splice(1.parametre,2.parametre;
+  Sime işleminde
+  1.parametre:Silinecek elemanının indis(index) değeri
+  2.parametre:Silinecek eleman sayısı   */
+
+/*Ekleme işleminde
+  splice(1.parametre,2.parametre,3. ve sonrası);
+  1.parametre:Bu indis(index) ten sonra elemanları ekle
+  2.parametre:Herzaman 0 olmalıdır.0 silinemeyecek anlamına gelir
+  3.ve diğerleri:Diziye eklenecek elemanlar yazılır.  */
+
+//Silme örneği
+var harf=["a","b","c","d","e","f","g","h"];
+document.write("Dizimiz: " + harf + "<br />");
+
+var islem1=harf.splice(1,1);
+document.write("Tekli silme:" + harf  + "<br />")
+
+var islem2=harf.splice(2,3);
+document.write("Çoklu silme:" +  harf  + "<br/>");
+
+document.write("Silinmiş dizi:" +harf + "<br/> <br/> ");
+
+//Ekleme örneği
+
+var sehir=["Konya","Adana","Muş"];
+document.write("Dizimiz:" + sehir + "<br/>");
+
+var tekekle=sehir.splice(1,0,"Sinop");
+document.write("Tekli ekleme: " + sehir +"<br/>");
+
+var cokekle=sehir.splice(2,0,"Erzincan","Manisa","İzmir");
+document.write("Çoklu ekleme:" + sehir  +"<br/>");
+
+
+</script>
+</body>
+</html>
