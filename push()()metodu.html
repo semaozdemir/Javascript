@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>push() ve unshift() metodu</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+// push()	:	Dizi sonuna eleman yada elemanlar ekler.
+
+var esya=["Masa", "Sandalye", "Dolap"];
+document.write("Dizimiz: " + esya + "<br />");
+
+var islem1	=	esya.push("Halı");
+document.write("Tek eleman eklenen dizi:" +  esya + "<br />")
+
+var islem2=esya.push("Klima","Avize");
+document.write("Çok eleman eklenen dizi:" +  esya  + "<br/>");
+
+document.write(islem2); // Dizimizin eleman sayisini verir
+</script>
+</body>
+</html>
