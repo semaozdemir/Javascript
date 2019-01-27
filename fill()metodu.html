@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>fill() metodu</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+
+var  kirtasiye=["kalem","defter","silgi","makas"];
+document.write("Dizi:" + kirtasiye + "<br/>");
+
+kirtasiye.fill("ataç",0,1);
+//0 ıncı indexten başlayıp 1. indise kadar olan dizi elemanlarını ataç yapar
+document.write("Yeni Dizi:" + kirtasiye + "<br/>");
+
+kirtasiye.fill("uç");
+//Tüm elemanları uç ile değiştirir.
+document.write("Dizi:" + kirtasiye + "<br/>");
+
+
+kirtasiye.fill("kitap",2);
+//2.indisten başlar ve son indis e kadar tüm dizi elemanlarını kitap değeri ile değiştirir.
+document.write("Dizi:" + kirtasiye + "<br/>");
+
+
+</script>
+</body>
+</html>
