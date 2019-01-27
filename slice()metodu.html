@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>slice() metodu</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+var  meyveler=["elma","armut","erik","portakal","kivi"];
+document.write("Dizi:" + meyveler + "<br/>");
+
+
+var yenimeyve=meyveler.slice(2,4+1);
+// 2.den 4 e kadar +1 4 üncü indisi de dahil eder kopyalar
+document.write("Kopyalanan dizi:" +yenimeyve);
+
+/*var yenimeyve=meyveler.slice(0,-2); // sondan 2.dahil değil
+document.write("Kopyalanan dizi:" +yenimeyve);*/
+
+/*var yenimeyve=meyveler.slice(-3,-2); //sondan 3 ten 2. indise kadar
+document.write("Kopyalanan dizi:" +yenimeyve);*/
+
+/*var yenimeyve=meyveler.slice(-1); //sondan 1. indisten sonrası
+document.write("Kopyalanan dizi: " +yenimeyve); */
+
+</script>
+</body>
+</html>
