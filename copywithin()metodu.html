@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>copyWithin() metodu</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+
+var  isimler=["ali","veli","selami","oya","burak","can"];
+document.write("Dizi:" + isimler + "<br/>");
+
+/*isimler.copyWithin(4);
+// 4üncü indisin önüne gelip dizideki eleman sayisi tamamlanana kadar baştan başlayarak elemanları yazar
+document.write("Yeni Dizi:" + isimler + "<br/>");*/
+
+/*simler.copyWithin(3,2);
+// 3 üncü indisten sonra 2 inci indisten başlayarak tüm elemanları kopyalar
+document.write("Yeni Dizi:" + isimler + "<br/>");*/
+
+isimler.copyWithin(3,2,4);
+//4 ün önüne gelip 2ciden başlayıp 4 e kadar kopyalar
+document.write("Yeni Dizi:" + isimler + "<br/>");
+
+
+
+</script>
+</body>
+</html>
