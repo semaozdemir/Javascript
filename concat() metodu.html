@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>concat() metodu</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+
+//concat() metodu:Diziye eleman\elemanlar veya dizi\diziler ekler.
+
+var  erkek=["Deniz","barış","dünya"];
+document.write("Erkekler =" + erkek + "<br/>");
+var kadin=["Gökyüzü","oya","ayşe"];
+document.write("Kadınlar =" + kadin + "<br/>");
+
+var numara=[2,5,8,9,6];
+
+var islem=erkek.concat(kadin); //Kadın dizisini erkek dizisine ekler.
+document.write("Eklenmiş dizi =" + islem + "<br/>");
+
+//Birden fazla diziyi dahil etme;
+var fazladizi=erkek.concat(kadin,numara);
+document.write("Çoklu dizi eklem =" + fazladizi + "<br/>");
+
+//Dizi içindeki elemanı dahil etme;
+var tekeleman=numara.concat(kadin[2]); // indis numarasi yazilir
+document.write("Seçilen elemanın eklenmesi =" + tekeleman + "<br/>");
+
+//Dizi içindeki elemanları dahil etme;
+var tekeleman=numara.concat(kadin[0],erkek[0]); // indis numarasi yazilir
+document.write("Seçilen elemanın eklenmesi =" + tekeleman + "<br/>");
+</script>
+</body>
+</html>
