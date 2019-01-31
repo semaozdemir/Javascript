@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>reverse() ve sort() metodu</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+
+//reverse():Dizi içindeki sıralamayı teresine çevirir.
+var meyve=["elma","muz","armut","erik"];
+document.write("Dizimiz=" + meyve + "<br/>");
+var ters=meyve.reverse();
+document.write("Tersi=" + ters + "<br/>");
+
+//cok boyutlu dizilerde kullanimi;
+var meyve=["elma","muz",[256,584,456],"armut","erik"];
+document.write("Çok boyutlu dizimiz=" + meyve + "<br/>");
+var ters=meyve.reverse();
+document.write("Tersi= " + ters + "<br/>");
+
+
+
+//sort():Dizi içeriğini sıralar.Bunu unicode olarak yapar.
+//Yani sıralama yaparken her karakteri tek tek sıralar.
+
+var iller=["manisa","izmir","eskişehir","şanlıurfa","mardin","muş","yozgat"];
+document.write("İller =" + iller + "<br/>");
+
+iller.sort(); //Türkçe karakterleri ve özel karakterleri sıralamaz,en sona bırakır
+
+document.write(iller +"<br/>" + "<br/>" +"<br/>");
+
+
+
+//sort() metoduyla asil siralama
+
+//rakamlar için siralama kod bloğu;
+
+function sirala(a,b){
+    //a-b; Küçükten büyüğe siralama
+    //b-a; Büyükten küçüğe siralama
+    return a-b; //değeri dişari yolladik
+}
+
+var sayi= [1,7883,85,57,459,1881,2149,413,65,7];
+document.write("Sayı dizisi=" + sayi + "<br/>");
+sayi.sort(sirala);
+document.write("Küçükten büyüğe sırala= " + sayi +"<br/>"+ "<br/>");
+
+
+
+//Kelimeler için siralama A-Z ye
+
+function harfsirala(a,b){
+    var alfabe = "AaBbCcÇçDdEeFfGgĞğHhIıİiJjKkLlMmNnOoÖöPpQqRrSsŞşTtUuÜüVvWwXxYyZz";
+
+    if(a.length === 0 || b.length === 0)
+    {
+        return a.length-b.length;
+    }
+    else
+    {
+        var birinci=alfabe.indexOf(a[0]);
+        var ikinci=alfabe.indexOf(b[0]);
+
+        if(birinci !== ikinci)//denk değilse
+        {
+            return birinci - ikinci;
+        }
+        else
+        {
+            return harfsirala(a.slice(1),b.slice(1));
+        }
+    }
+}
+
+var adlar=["Ayşe", "Veli", "Şehmuz", "Şennur", "Piraye", "Çetin", "İrem"];
+document.write("Adlar dizisi=" + adlar + "<br/>");
+adlar.sort(harfsirala);
+document.write("Sıralanmış adlar=" + adlar);
+
+
+</script>
+</body>
+</html>
