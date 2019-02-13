@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>toString()</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+// toString():Değişkendeki değeri string (metin) veri türüne çevirir ve bu değeri geri döndürür.
+
+var bir	= 9;
+var iki	=33.36;
+
+document.write("Birinci değer= " + bir + "<br/>");
+document.write("İkinci değer= " + iki + "<br/>");
+
+var sonucbir=typeof bir;
+var sonuciki=typeof iki;
+
+
+document.write("Birinci değerin veri türü= " + sonucbir + "<br/>");
+document.write("İkinci değerin veri türü= " + sonuciki + "<br/> " + "<br/> ");
+
+var islem1=sonucbir.toString(); //dönüsüm islemlerini yapalim
+var islem2=sonuciki.toString();
+
+var genelsonucbir=typeof islem1; //veri türlerimizi ögrenelim
+var genelsonuciki=typeof islem2;
+
+document.write("Dönüşüm sonucu;" + "<br/>"  )
+document.write("Birinci değerin veri türü=" +genelsonucbir + "<br/>");
+document.write("İkinci değerin veri türü=" +genelsonuciki + "<br/>");
+
+</script>
+</body>
+</html>
