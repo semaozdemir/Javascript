@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>random()</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+
+// sing() metodu : prametre olarak aldığı sayı değerinin işaretini bulup değeri geri döndürür.
+// pozitif sonuc için --> 1 değeri döner
+// negatif sonuc icin --> -1 değeri döner
+// 0 için --> 0 döner
+// 3 ihtimal dısındaki tüm değerler icin NaN dönecektir.
+
+var degerbir = 69;
+
+var sonucdegerbir = Math.sign(degerbir);
+
+document.write("Birinci değer = " + degerbir + "  sonuc = " +sonucdegerbir + "<br/>");
+
+if(sonucdegerbir == 1)
+{
+    document.write("Sayı değeri pozitif" + "<br/>");
+}
+
+else if(sonucdegerbir == -1)
+{
+    document.write("Sayı değeri negatif" + "<br/>");
+}
+
+else if(sonucdegerbir == 0)
+{
+    document.write("Sayı değeri sıfır" + "<br/>");
+}
+
+else
+{
+    document.write("sayı değeriniz NaN" + "<br/>");
+}
+
+</script>
+</body>
+</html>
