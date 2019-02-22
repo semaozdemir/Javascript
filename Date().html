@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Date()</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+
+//Date() : Değişkene tarih ve saat değerini depolamak için kullanılır.
+//Depoladığı değeri geri döndürür.Etki edilip değiştirilebilir.
+
+var zaman  =  new Date(); //(Gün ,Ay ,Ayın günü 0 - 31 ,Yıl , Saat , Dk , Sn)
+document.write("Tarih : " + zaman + "<br/>" + "<br/>" + "<br/>");
+
+
+
+//Tarihe etki etme örneği
+var etkizaman  =  new Date(19,2,7);
+document.write("Etki edilen : " + etkizaman + "<br/>" + "<br/>" + "<br/>");
+//saate etki etmediğimiz icin 00:00 olarak kalir
+ 
+//yil 1900 den baslar iki basamaklı yil belirtilir ise 1900 üzerinde ekleme yapilir.
+
+
+
+
+//Tarihe tam anlamıyla etki etme
+var tametkilizaman= new Date(2019 ,2 ,22 ,14, 13 ,10);
+document.write("Tam etkili tarih : " + tametkilizaman + "<br/>"+ "<br/>"+ "<br/>");
+
+
+
+//Zamani stringe donusturup parcalama ornegi
+var tarih    = new Date();
+document.write(tarih + "<br/>");
+var donustur = String(tarih); //Stringe donusum saglandi
+var parcala  = donustur.split(" "); //bosluklardan parcaladik ve dizi yaptik
+var kisagun  = parcala[0];
+document.write("Gün " + kisagun +"<br/>" );
+var kisaay   = parcala[1];
+document.write("Ay " + kisaay +"<br/>" );
+
+var kisagun2 = parcala[2];
+document.write("Kısa gün " + kisagun2 +"<br/>" );
+
+var kisayil  = parcala[3];
+document.write("Yıl " + kisayil +"<br/>" );
+
+var tamsaat  = parcala[4];
+document.write("Tam saat " + tamsaat +"<br/>" );
+
+var parcasaat = tamsaat.split(":"); // : 'den parcaladik ,dizi yaptik
+var parcasaati = parcasaat[0];
+document.write("Saat " + parcasaati +"<br/>" );
+
+var parcadk    = parcasaat[1];
+document.write("Dakika " + parcadk +"<br/>" );
+
+var parcasn    = parcasaat[2];
+document.write("Saniye " + parcasn +"<br/>" );
+
+
+</script>
+</body>
+</html>
