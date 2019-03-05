@@ -2,43 +2,75 @@
 <html lang="tr-TR">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<title>Date metotlari()</title>
+<title>Ay düzeltmesi</title>
 </head>
 
 <body>
 <script type="text/javascript" language="javascript">
 
-// Javacsript'te kullanilan Date metotlari
+var zaman = new Date();
+var ay = zaman.getMonth();
 
-// getFullYear() metodu:Degiskene yil bilgisini 1.000-9999 arasinda 
-//rakamsal olarak depolar,degeri geri dondurur.
+if(ay == 0 )
+{
+    var yaz = "Ocak";
+}
+else if(ay == 1)
+{
+    var yaz = "Şubat";
+}
 
-var tarih = new Date();
-var yil = tarih.getFullYear();
+else if(ay == 2)
+{
+    var yaz = "Mart";
+}
 
-document.write("Yıl bilgisi " +  yil + "<br/>" + "<br/>" + "<br/>" );
- 
+else if(ay == 3)
+{
+    var yaz = "Nisan";
+}
 
+else if(ay == 4)
+{
+    var yaz = "Mayıs";
+}
 
-//getMonth() metodu:Degiskendeki yilin ay bilgisini 0-11 arasinda 
-//rakamsal olarak depolayip degeri geri dondurur.
+else if(ay == 5)
+{
+    var yaz = "Haziran";
+}
 
+else if(ay == 6)
+{
+    var yaz = "Temmuz";
+}
 
-var ay = tarih.getMonth();
-document.write("Ay bilgisi " + ay + "<br/>" + "<br/>" + "<br/>");
+else if(ay == 7)
+{
+    var yaz = "Ağustos";
+}
 
-//getDate() metodu:Degiskene ayin gun bilgisini
-//1-31 arainda rakamsal olarak deplayip degeri geri dondurur.
+else if(ay == 8)
+{
+    var yaz = "Eylül";
+}
 
+else if(ay == 9)
+{
+    var yaz = "Ekim";
+}
 
-var gun = tarih.getDate();
-document.write("Gün bilgisi " + gun + "<br/>" + "<br/>" + "<br/>");
+else if(ay == 10)
+{
+    var yaz = "Kasım";
+}
 
-//getDay() metodu:Degiskene haftanin gun bilgisini
-// 0-6 arasinda rakamsal olarak depolar,geri dondurur.Pazar ın degeri 0 dır.
+else if(ay == 11)
+{
+    var yaz = "Aralık";
+}
+document.write(yaz);
 
-var gunumuz = tarih.getDay();
-document.write("Günümüz bilgisi " + gunumuz );
 
 </script>
 </body>
