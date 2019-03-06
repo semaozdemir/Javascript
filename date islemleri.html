@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Date islemleri</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+
+//Javascript'te kullanilan Date metotlari
+
+//getFullYear() metodu:Degiskene yil bilgisini 1.000-9999 arasinda rakamsal olarak depolar,degeri geri dondurur.
+
+var tarih = new Date();
+var yil = tarih.getFullYear();
+
+document.write("Yıl bilgisi " + yil + "<br/>");
+
+
+
+
+//getMonth() metodu:Degiskendeki yilin ay bilgisini 0-11 arasinda rakamsal olarak depolaryip degeri geri dondurur.
+
+var ay = tarih.getMonth();
+document.write("Ay bilgisi " + ay + "<br/>");
+
+//getDate() metodu:Degiskene ayin gun bilgisini 1-31 arasinda rakamsal olarak depolayip,degeri geri dondurur.
+
+var gun = tarih.getDate();
+document.write("Gün bilgisi " + gun + "<br/>");
+
+//getDay() metodu:Degiskene  haftanin gun bilgisini 0-6 arasinda rakamsal olarak depolar,geri dondurur.
+//Pazar ın degeri 0 dır.
+
+var gunumuz = tarih.getDay();
+document.write("Günümüz bilgisi " + gunumuz);
+</script>
+</body>
+</html>
