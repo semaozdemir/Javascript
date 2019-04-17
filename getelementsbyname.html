@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Dom örnekleri</title>
+</head>
+
+<body>
+<style>
+
+ div {
+     border:1px solid black;
+     margin:5px;
+     padding: 5px;
+
+ }
+
+</style>
+
+<div class="arkaplan"> Renkli çerçeve yapalım</div>
+
+<script>
+    var sonuc =document.getElementsByClassName("arkaplan");
+    sonuc[1].style.backgroundcolor = "#F1F1F1";
+</script>
+</body>
+</html>
